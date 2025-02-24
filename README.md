@@ -1,40 +1,44 @@
 # Telegram Render Notifications for Houdini
 
-Esta herramienta permite enviar notificaciones a través de Telegram cuando se completan renders en Houdini. Es útil para monitorear renders largos desde cualquier lugar.
+This tool allows you to send Telegram notifications when renders in Houdini start, progress, complete, or fail. It is particularly useful for monitoring long renders remotely.
 
-## Características
+## Features
 
-- **Configuración fácil**: Configura tu bot de Telegram y los IDs de chat directamente desde la interfaz de usuario.
-- **Notificaciones personalizables**: Recibe notificaciones cuando los renders comienzan, terminan o fallan.
-- **Prueba de conexión**: Verifica que tu configuración de Telegram esté correcta antes de usarla.
-- **Integración con Shelf**: Añade la herramienta a cualquier estante en Houdini para un acceso rápido.
+- **Easy Configuration**: Set up your Telegram bot and chat IDs directly from the user interface.
+- **Customizable Notifications**: Receive notifications when renders start, finish, or encounter errors.
+- **Connection Testing**: Verify your Telegram configuration before using it.
+- **Shelf Integration**: Add the tool to any shelf in Houdini for quick access.
+- **Render Progress Updates**: Get real-time updates on render progress, including estimated completion time.
+- **Error Handling**: Detailed error messages are sent to Telegram if a render fails.
+- **Render Statistics**: Track render times and performance statistics.
 
-## Requisitos
+## Requirements
 
-- Houdini 18.0 o superior.
-- Una cuenta de Telegram y un bot creado a través de BotFather.
+- Houdini 18.0 or higher.
+- A Telegram account and a bot created via BotFather.
 
-## Instalación
+## Installation
 
-1. **Descarga el script**: Coloca el script de Python en un directorio accesible desde Houdini.
-2. **Ejecuta el script**: En Houdini, abre un editor de Python y ejecuta el script para iniciar la interfaz de usuario.
-3. **Configura tu bot**: Usa la interfaz para ingresar tu `BOT_TOKEN` y `CHAT_ID`.
+1. **Download the Script**: Place the Python script in a directory accessible from Houdini.
+2. **Run the Script**: In Houdini, open a Python editor and run the script to launch the user interface.
+3. **Configure Your Bot**: Use the interface to enter your `BOT_TOKEN` and `CHAT_ID`.
 
-## Uso
+## Usage
 
-- **Configuración**: Haz clic en "Configure Telegram Bot" para ingresar los detalles de tu bot.
-- **Prueba de conexión**: Usa el botón "Test Telegram Connection" para asegurarte de que todo esté configurado correctamente.
-- **Habilitar/Deshabilitar notificaciones**: Usa el botón "Enable Notifications" para activar o desactivar las notificaciones.
-- **Añadir a Shelf**: Si deseas acceder rápidamente a la herramienta, usa el botón "Create Shelf Tool" para añadirla a un estante en Houdini.
+- **Configuration**: Click "Configure Telegram Bot" to enter your bot details.
+- **Test Connection**: Use the "Test Telegram Connection" button to ensure everything is set up correctly.
+- **Enable/Disable Notifications**: Use the "Enable Notifications" button to turn notifications on or off.
+- **Add to Shelf**: If you want quick access to the tool, use the "Create Shelf Tool" button to add it to a shelf in Houdini.
+- **Render Progress**: During a render, you will receive progress updates, including estimated completion time and a progress bar.
 
-## Soporte
+## Support
 
-Para más información sobre cómo obtener un `BOT_TOKEN` y un `CHAT_ID`, consulta la sección de ayuda dentro de la herramienta o visita la [documentación oficial de Telegram Bots](https://core.telegram.org/bots#creating-a-new-bot).
+For more information on how to obtain a `BOT_TOKEN` and `CHAT_ID`, consult the help section within the tool or visit the [official Telegram Bot documentation](https://core.telegram.org/bots#creating-a-new-bot).
 
-## Contribuciones
+## Contributing
 
-Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request si tienes alguna mejora o encuentras algún problema.
+Contributions are welcome. Please open an issue or a pull request if you have any improvements or encounter any problems.
 
-## Licencia
+## License
 
-Este proyecto está licenciado bajo la MIT License - ver el archivo [LICENSE](LICENSE) para más detalles.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
