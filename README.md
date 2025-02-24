@@ -26,26 +26,29 @@ This tool allows you to send Telegram notifications when renders in Houdini star
 📌 Where to Save the .py File
 🔹 Option 1 (Recommended): Houdini Scripts Folder
 Save the file in the following directory:
-
-bash
-Copiar código
+```
 $HOUDINI_USER_PREF_DIR/scripts/
+```
 (On Windows, this is usually: C:/Users/YOUR_USER/Documents/houdiniXX.XX/scripts/.)
 
 Then, in Houdini’s Source Editor, run:
-
+```
 import telegram_notifications
 telegram_notifications.create_ui()
+```
 This should launch the script’s UI automatically.
 
 🔹 If you get a ModuleNotFoundError when importing
 Houdini might not be looking in the scripts/ folder. To fix this, manually add the path before importing:
 
+```
 import sys
 sys.path.append("C:/Users/YOUR_USER/Documents/houdiniXX.XX/scripts")
 
 import telegram_notifications
 telegram_notifications.create_ui()
+```
+
 This tells Houdini where to find the script and should resolve the issue.
 
 🔹 Option 2 (Easier, but Less Flexible): Houdini’s Python Library Folder
@@ -54,9 +57,10 @@ If you don’t want to modify sys.path, save the script in Houdini’s Python li
 C:\Program Files\Side Effects Software\Houdini XX.XX.X\python311\lib\
 From there, it will work without any additional configuration:
 
+```
 import telegram_notifications
 telegram_notifications.create_ui()
-
+```
 ⚠ Downside: If you update Houdini, you’ll need to copy the script to the new version’s folder.
 
 
